@@ -1,6 +1,0 @@
-Main.class
-controller\WeightController$ActionListenerForWeightView.class
-controller\WeightController.class
-FakeFrame.class
-view\WeightView.class
-model\WeightModel.class
