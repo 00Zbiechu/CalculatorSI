@@ -78,32 +78,4 @@ public class TemperatureView extends JPanel implements Serializable {
 
     }
 
-    public void setTextFieldFontColor(Color color){
-        textField.setForeground(color);
-    }
-    public void setTextFieldBGColor(Color color){
-        textField.setBackground(color);
-    }
-    public void setTextAreaFont(Font font){
-        textField.setFont(font);
-    }
-    public void setComboBoxFontColor(Color color){
-        comboBox.setForeground(color);
-    }
-    public void setComboBoxBGColor(Color color){
-        comboBox.setBackground(color);
-    }
-    public void setComboBoxFont(Font font){
-        comboBox.setFont(font);
-    }
-    public void setButtonFontColor(Color color){
-        button.setForeground(color);
-    }
-    public void setButtonBGColor(Color color){
-        button.setBackground(color);
-    }
-    public void setButtonFont(Font font){
-        button.setFont(font);
-    }
-
 }

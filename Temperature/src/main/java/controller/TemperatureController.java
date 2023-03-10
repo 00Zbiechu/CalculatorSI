@@ -3,6 +3,7 @@ package controller;
 import lombok.Getter;
 import lombok.Setter;
 import model.TemperatureModel;
+import view.TemperatureCustomization;
 import view.TemperatureView;
 
 import java.awt.event.ActionEvent;
