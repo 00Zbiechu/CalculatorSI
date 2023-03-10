@@ -8,17 +8,17 @@ import java.awt.event.ActionListener;
 
 @Getter
 @Setter
-public class WeightView extends JPanel {
+public class TimeView extends JPanel {
 
     private JPanel panel;
     private JTextField textField;
 
-    private String [] listOfItemsForComboBox = {"Kilos","Decagram","Pound","Ounce"};
+    private String [] listOfItemsForComboBox = {"Minutes","Hours","Months","Years"};
     private JComboBox<String> comboBox;
 
     private JButton button;
 
-    public WeightView(){
+    public TimeView(){
 
         initGUI();
 

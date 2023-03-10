@@ -1,5 +1,4 @@
-import controller.WeightController;
-import view.WeightView;
+import controller.TimeController;
 
 import javax.swing.*;
 
@@ -7,7 +6,7 @@ public class FakeFrame extends JFrame {
 
     public FakeFrame(){
 
-        WeightController weightController = new WeightController();
+        TimeController weightController = new TimeController();
 
         add(weightController.getWeightView());
     }

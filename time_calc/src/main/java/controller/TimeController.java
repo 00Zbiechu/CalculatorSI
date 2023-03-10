@@ -2,26 +2,25 @@ package controller;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
-import model.WeightModel;
-import view.WeightView;
+import model.TimeModel;
+import view.TimeView;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 @Getter
 @Setter
-public class WeightController {
+public class TimeController {
 
-    private final WeightView weightView;
-    private final WeightModel weightModel;
+    private final TimeView weightView;
+    private final TimeModel weightModel;
 
     double result;
 
-    public WeightController(){
+    public TimeController(){
 
-        weightModel = new WeightModel();
-        weightView = new WeightView();
+        weightModel = new TimeModel();
+        weightView = new TimeView();
             weightView.addActionListener(new ActionListenerForWeightView());
 
     }
@@ -34,19 +33,19 @@ public class WeightController {
             if(e.getSource().equals(weightView.getButton()) && !weightView.getTextField().getText().isEmpty()){
 
                 if(weightView.getComboBox().getSelectedIndex()==0){
-                    result = weightModel.convertGramsIntoKilos(Double.parseDouble(weightView.getTextField().getText()));
+                    result = weightModel.convertSecondsIntoMinutes(Double.parseDouble(weightView.getTextField().getText()));
                     System.out.println(result);
 
                 }else if(weightView.getComboBox().getSelectedIndex()==1) {
-                    result = weightModel.convertGramsIntoDecagram(Double.parseDouble(weightView.getTextField().getText()));
+                    result = weightModel.convertSecondsIntoHours(Double.parseDouble(weightView.getTextField().getText()));
                     System.out.println(result);
 
                 }else if(weightView.getComboBox().getSelectedIndex()==2) {
-                    result = weightModel.convertGramsIntoPound(Double.parseDouble(weightView.getTextField().getText()));
+                    result = weightModel.convertSecondsIntoYears(Double.parseDouble(weightView.getTextField().getText()));
                     System.out.println(result);
 
                 } else if(weightView.getComboBox().getSelectedIndex()==3) {
-                    result = weightModel.convertGramsIntoOunce(Double.parseDouble(weightView.getTextField().getText()));
+                    result = weightModel.convertSecondsIntoWeeks(Double.parseDouble(weightView.getTextField().getText()));
                     System.out.println(result);
 
                 }
